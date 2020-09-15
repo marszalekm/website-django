@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+
+<link rel="stylesheet" href="{% static 'home.css' %}">
+
+<div class="home"><br>
+    <h1>Hi, my name is Michał.</h1>
+    <h2>Thank you for visiting my website.</h2>
+    <p>I created it with Django, Python and deployed using Docker container and AWS. <br><br>Site is constantly under development, so if you have any remarks please let me know!</p>
+    <h3>Random motivational quote for you:</h3>
+    <q>{{ text }}</q>
+    <small class="author">{{ author }}</small>
+</div>
+
+{% endblock %}

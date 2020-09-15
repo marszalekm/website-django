@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<link rel="stylesheet" href="{% static 'contact.css' %}">
+
+<h1 style="text-align: center; padding: 50px;">Feel free to give me some feedback:</h1>
+
+<div class="grid-container">
+    <div style="margin-bottom: 1%"><img src="{% static 'email.png' %}">
+        <h3 style="padding: 5px;">mictommarszalek@gmail.com</h3></div>
+
+    <div><img src="{% static 'phone.png' %}"
+              style="width: 60; height: 60; margin-left: 39%; margin-top: 1.5%;">
+        <h3 style="padding: 20px;">661 597 341</h3></div>
+
+    <a href="http://www.github.com/marszalekm"><div><img src="{% static 'GitHub.png' %}">
+        <h3 style="padding: 25px;">github.com/marszalekm</h3></div></a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<link rel="stylesheet" href="{% static 'projects.css' %}">
+<h1 style="text-align: center;">Projects</h1>
+<div class="row">
+{% for project in projects %}
+    {% if forloop.counter0|divisibleby:3 %}
+    </div><div class="row">
+    {% endif %}
+    <a href="{{ project.link }}" >
+        <div class="card text-center">
+            <img class="card-img-top" src="{% static project.image %}" height="200" width="200">
+            <div class="card-body" style="width: 18rem;">
+                <h3 class="card-title">{{ project.title }}</h3>
+                <p style="padding: 5px;">{{ project.description }}</p>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}
