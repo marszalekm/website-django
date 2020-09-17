@@ -2,43 +2,12 @@
   <title>Michał Marszałek webiste</title>
 </head>
 
-<style>
-
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  font-size: large;
-}
-
-.navbar li {
-  float: left;
-  display: inline;
-  font-family: Calibri, sans-serif;
-}
-
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 25px;
-  text-decoration: none;
-}
-
-.navbar li a:hover {
-  background-color: #111;
-}
-
-</style>
-
+{% load static %}
+<link rel="stylesheet" href="{% static 'base.css' %}">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-<!--      <a class="navbar-brand" href="#">WebSiteName</a>-->
     </div>
         <ul class="nav navbar-nav">
           <li ><a class="active", href="{% url 'home' %}">Home</a></li>
