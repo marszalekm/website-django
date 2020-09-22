@@ -6,3 +6,5 @@ class Projects(models.Model):
     description = models.TextField()
     link = models.URLField()
     image = models.FilePathField(path="", default='/tba.png')
+
+

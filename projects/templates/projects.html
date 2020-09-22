@@ -5,7 +5,7 @@
 <h1 style="text-align: center;">Projects</h1>
 <div class="row">
 {% for project in projects %}
-    {% if forloop.counter0|divisibleby:3 %}
+    {% if forloop.counter0|divisibleby:4 %}
     </div><div class="row">
     {% endif %}
     <a href="{{ project.link }}" >
