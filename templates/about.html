@@ -1,20 +1,25 @@
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
-
 <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
 <div class="about">
-<h1 style="text-align: center;">Few words about me:</h1>
+<h1 style="text-align: center; padding: 25px;">Few words about me:</h1>
 
-
-<div><img src="{% static 'img/portret.jpg' %}" class="pull-left mr-20">
-    <p class="introduction">I am a diligent and ambitious person, strongly focusing on self-development
-    and constantly educating myself. Programming became my hobby during my
-    studies, where I got to know its basics, and also started using Linux every day.
-    During my internship in Italy I had the opportunity to apply these skills
-    to real problems, thanks to which I became a co-creator of the a-ARM protocol
-    in the field of computational chemistry. I am also interested in
-    machine learning topics, especially pattern recognition.</p>
+<div class="introduction">
+    <div class="picture"><img src="{% static 'img/portret.jpg' %}"></div>
+    <div class="intro">
+        <div>I am a diligent and ambitious person, strongly focusing on self-development
+            and constantly educating myself. I like to be up to date with present trends
+            and technologies - in both commercial and scientific sectors. I also try to
+            attend various online events such as webinars (for example those organized by AWS)
+            and read, watch or listen about technology news from different fields.</div>
+        <div style="padding-top: 10px;">Programming became my hobby during my studies,
+            where I got to know its basics, and also started using Linux every day.
+            During my internship in Italy I had the opportunity to apply these skills
+            to real problems, thanks to which I became a co-creator of the a-ARM protocol
+            in the field of computational chemistry. I am also interested in machine learning
+            topics, especially pattern recognition.</div></div>
 </div>
 
 
@@ -22,9 +27,9 @@
 <h2>Skills</h2>
 <div class="skills">
 
-    <div class="item4"><h5>Practical</h5></div>
-    <div class="item5"><h5>Basic</h5></div>
-    <div class="item6" style="font-size: 22px; ">
+    <div class="practical"><h5>Practical</h5></div>
+    <div class="basic"><h5>Basic</h5></div>
+    <div class="practicallist">
         <ul >
             <li>Python (<i>Matplotlib, NumPy, SQLAlchemy</i>)</li>
             <li>Linux (<i>Bash</i>)</li>
@@ -34,24 +39,29 @@
         </ul>
     </div>
 
-    <div class="item7" style="font-size: 22px;">
+    <div class="basiclist">
         <ul>
             <li>Machine learning (<i>PyTorch, TensorFlow, Scikit-learn</i>)</li>
             <li>Docker, AWS</li>
-            <li>JavaScript</li>
+            <li>JavaScript (<i>JQuery</i>), Django REST</li>
             <li>PostgreSQL</li>
+            <li>Selenium, Postman</li>
         </ul>
     </div>
-</div><br>
+    <div class="ide">My IDE of choice is PyCharm. However while coding in JavaScript I use VSCode,
+to which I am still trying to convince myself.</div>
+</div>
+
+
 
 <h2>Experience</h2>
 <div class="experience">
 
-    <div class="item4" style="text-align: right;"><h5>10/2019 – 05/2020</h5></div>
-    <div class="item5" style="text-align: justify; text-align: left;"><h5>Research and development internship<br>
+    <div class="date"><h5>10/2019 – 05/2020</h5></div>
+    <div class="position"><h5><b>Research and development internship</b><br>
         Computational chemistry laboratory<br>
         University of Siena, Italy</h5></div>
-    <div class="item2" style="margin-left: 25%; margin-right: 25%; ">
+    <div class="details">
         <ul>
             <li>Internship topic: "Validation of a computational protocol for the automatic search
                 of fluorescent mutants in <i>Anabaena</i> Sensory Rhodopsin." </li>
@@ -67,45 +77,45 @@
                 I used with the methods of machine learning.</li>
         </ul>
     </div>
-    <div class="item8" style="text-align: right;"><h5>10/2017 – 01/2018</h5>
+    <div class="date"><h5>10/2017 – 01/2018</h5>
     </div>
-    <div class="item9" style="text-align: justify; text-align: left;"><h5>Manual worker<br>
+    <div class="position"><h5><b>Manual worker</b><br>
         Profesja Brewery, Wrocław</h5>
     </div>
 
-    <div class="item10" style="text-align: right;"><h5>August 2017</h5>
+    <div class="date"><h5>August 2017</h5>
     </div>
-    <div class="item11" style="text-align: justify; text-align: left;"><h5>Practice <br> Wojewódzki Inspektorat Ochrony Środowiska
+    <div class="position"><h5><b>Practice</b> <br> Wojewódzki Inspektorat Ochrony Środowiska
         w Katowicach, <br> Pracownia Analiz w Częstochowie</h5>
     </div>
 </div><br>
 
 <h2>Education</h2>
 <div class="education">
-    <div class="item8" style="text-align: right;"><h5>02/2018 – 09/2019</h5>
+    <div class="date"><h5>02/2018 – 09/2019</h5>
     </div>
-    <div class="item9" style="text-align: left;"><h5>Bioinformatics, 2<sup>nd</sup> level studies in English<br>
+    <div class="position"><h5>Bioinformatics, 2<sup>nd</sup> level studies in English<br>
        Wrocław University of Science and Technology</h5>
     </div>
 
-    <div class="item10" style="text-align: right;"><h5>10/2014 – 01/2018</h5>
+    <div class="date"><h5>10/2014 – 01/2018</h5>
     </div>
-    <div class="item11" style="text-align: left;"><h5>Biotechnology, 1<sup>st</sup> level studies in Polish<br>
+    <div class="position"><h5>Biotechnology, 1<sup>st</sup> level studies in Polish<br>
     Wrocław University of Science and Technology</h5>
     </div>
 </div><br>
 
 <div class="colsection">
-    <div class="item4" style="text-align: center; ">
-        <h5><b>Languages:</b></h5>
+    <div class="title">
+        <h2><b>Languages:</b></h2>
     </div>
-    <div class="item5" style="text-align: center;">
-        <h5><b>Competencies:</b></h5>
+    <div class="title">
+        <h2><b>Competencies:</b></h2>
     </div>
-    <div class="item8" style="text-align: center;">
-        <h5><b>Hobbies:</b></h5>
+    <div class="title">
+        <h2><b>Hobbies:</b></h2>
     </div>
-    <div class="item9" style="text-align: left;">
+    <div class="itemslist1">
         <h5>
             <ul>
                 <li>English (C1) - fluent</li>
@@ -117,10 +127,9 @@
         </h5>
     </div>
 
-    <div class="item10" style="text-align: left;">
+    <div class="itemslist2">
         <h5>
             <ul>
-                <li>creativity and innovation</li>
                 <li>great work organization</li>
                 <li>initiative and high motivation</li>
                 <li>communicativeness</li>
@@ -128,7 +137,7 @@
             </ul>
         </h5>
     </div>
-    <div class="item11" style="text-align: justify; text-align: left;">
+    <div class="itemslist3">
         <h5>
             <ul>
                 <li>learning languages</li>
@@ -140,35 +149,35 @@
 </div>
 
 <h2>Publication</h2>
-<div>
-<h3 style="text-align: center; font-weight: normal;">Bujok J., Gąsior-Głogowska M., Marszałek M., et al.
+<div class="publication">
+<p>Bujok J., Gąsior-Głogowska M., Marszałek M., et al.
     “Applicability of FTIR-ATR Method to Measure Carbonyls in Blood Plasma
     after Physical and Mental Stress”. BioMed Research International,
-    vol. 2019, 9 pages.</h3>
+    vol. 2019, 9 pages.</p>
 </div><br>
 
 <h2>Additional activity</h2>
-<div class="activity" >
-    <div class="item4" style="text-align: right;"><h5>5/02 - 9/02/2018</h5>
+<div class="activity">
+    <div class="date"><h5>5/02 - 9/02/2018</h5>
     </div>
-    <div class="item5" style="text-align: left;">
+    <div class="position">
         <h5>6<sup>th</sup> WAMMBAT Workshop of Atomistic and Mesoscale
             Modelling in Bio – Applications And
-            Technology Biofunctional Materials</h5>
+            Technology Biofunctional Materials.</h5>
     </div>
-    <div class="item8" style="text-align: right;"><h5>2017 - 2018</h5>
+    <div class="date"><h5>2017 - 2018</h5>
     </div>
-    <div class="item9" style="text-align: justify; text-align: left;">
+    <div class="position">
         <h5>Member of the Wrocław University of Science and Technology
             Student Scientific Club “OFF-ROAD”,
-            involved in project “Scorpio” Mars rover</h5>
+            involved in project “Scorpio” Mars rover.</h5>
     </div>
 
-    <div class="item10" style="text-align: right;"><h5>04/2017 - 11/2017</h5>
+    <div class="date"><h5>04/2017 - 11/2017</h5>
     </div>
-    <div class="item11" style="text-align: justify; text-align: left;">
+    <div class="position">
         <h5>Project: “Improving the competence of students of the
-            Chemical Faculty in response to the needs of the labour market”
+            Chemical Faculty in response to the needs of the labour market.”
             UDA-POWR.03.01.00-00-K088/15</h5>
     </div>
 </div>
